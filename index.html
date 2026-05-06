@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jellopiara – Sweet Foods Make Your Mood Better</title>
+  <title>Jellopiaa – Sweet Foods Make Your Mood Better</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
-    <div class="navbar-logo">jello<span>piara</span></div>
+    <div class="navbar-logo">
+      <img src="Logo.png" alt="Jellopiaa Logo" class="logo-img"/>
+    </div>
     <ul class="nav-links">
       <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -39,13 +42,18 @@
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-float">🍈</div>
-    <div class="hero-float">🍓</div>
-    <div class="hero-float">🍊</div>
-    <div class="hero-float">🍑</div>
+    <!-- <div class="hero-float">🍈</div>
+    <div class="hero-float">🟨</div>
+    <div class="hero-float">🟥</div>
+    <div class="hero-float">⬜️</div> -->
+    
+    <!-- Background Blobs (Lingkaran) -->
+    <div class="blob-bg blob-teal"></div>
+    <div class="blob-bg blob-tan"></div>
+    <div class="blob-bg blob-yellow"></div> 
     <div class="hero-blob-orange"></div>
     <div class="hero-content">
-      <div class="hero-badge">✨ Artisanal Jelly Salad</div>
+      <!-- <div class="hero-badge">✨ Artisanal Jelly Salad</div> -->
       <h1 class="hero-title spray-heading">
         Sweet Foods Make<br>
         <span class="accent">Your Mood Better</span>
@@ -66,7 +74,8 @@
       <h2 class="section-title">ABOUT</h2>
       <div class="about-grid">
         <div class="about-img-wrap">
-          <span class="about-img-placeholder">🥗</span>
+          <img src="salad1.jpg" alt="About Jellopiaa" class="about-img"/>
+          <!-- <span class="about-img-placeholder">🥗</span> -->
         </div>
         <div class="about-cards">
           <div class="about-card">
@@ -101,7 +110,7 @@
       <h2 class="section-title">MENU</h2>
       <div class="menu-grid">
         <div class="menu-img-wrap">
-          <span class="about-img-placeholder" style="font-size:4rem">🥣</span>
+          <img src="salad.jpeg" alt="Jelly Salad Spesial" class="menu-custom-img">
         </div>
         <div class="menu-content">
           <h2 class="spray-heading">Jelly Salad Spesial</h2>
@@ -128,34 +137,47 @@
       <div class="gallery-slider-wrap" id="galleryWrap">
         <button class="gallery-arrow gallery-arrow-prev" id="galleryPrev" aria-label="Sebelumnya">&#8592;</button>
         <button class="gallery-arrow gallery-arrow-next" id="galleryNext" aria-label="Berikutnya">&#8594;</button>
+
       <div class="gallery-slider-clip">
         <div class="gallery-track" id="galleryTrack">
-          <div class="gallery-slide" data-emoji="🥗">
-            <div class="gallery-slide-inner"><span class="gallery-placeholder-emoji">🥗</span></div>
-            <div class="gallery-slide-overlay"><span>🔍</span></div>
-          </div>
-          <div class="gallery-slide" data-emoji="🍈">
-            <div class="gallery-slide-inner"><span class="gallery-placeholder-emoji">🍈</span></div>
-            <div class="gallery-slide-overlay"><span>🔍</span></div>
-          </div>
-          <div class="gallery-slide" data-emoji="🍮">
-            <div class="gallery-slide-inner"><span class="gallery-placeholder-emoji">🍮</span></div>
-            <div class="gallery-slide-overlay"><span>🔍</span></div>
-          </div>
-          <div class="gallery-slide" data-emoji="🍓">
-            <div class="gallery-slide-inner"><span class="gallery-placeholder-emoji">🍓</span></div>
-            <div class="gallery-slide-overlay"><span>🔍</span></div>
-          </div>
-          <div class="gallery-slide" data-emoji="🥣">
-            <div class="gallery-slide-inner"><span class="gallery-placeholder-emoji">🥣</span></div>
-            <div class="gallery-slide-overlay"><span>🔍</span></div>
-          </div>
-          <div class="gallery-slide" data-emoji="🎁">
-            <div class="gallery-slide-inner"><span class="gallery-placeholder-emoji">🎁</span></div>
-            <div class="gallery-slide-overlay"><span>🔍</span></div>
-          </div>
+      <!-- Ulangi ini buat semua slide lo -->
+        <div class="gallery-slide" data-emoji="salad">
+          <div class="gallery-slide-inner">
+            <img src="salad2.jpeg" alt="Gallery Jellopiaa" class="gallery-img">
         </div>
-        </div><!-- end gallery-slider-clip -->
+        <div class="gallery-slide-overlay"><span>🔍</span></div>
+      </div>
+  
+      <div class="gallery-slide" data-emoji="melon">
+        <div class="gallery-slide-inner">
+          <img src="salad3.jpg" alt="Gallery Jellopiaa" class="gallery-img">
+        </div>
+      <div class="gallery-slide-overlay"><span>🔍</span></div>
+    </div>
+     
+        <div class="gallery-slide" data-emoji="gift">
+          <div class="gallery-slide-inner">
+            <img src="doc.jpeg" alt="Gallery Jellopiaa" class="gallery-img">
+          </div>
+        <div class="gallery-slide-overlay"><span>🔍</span></div>
+      </div>
+
+        <div class="gallery-slide" data-emoji="party">
+          <div class="gallery-slide-inner">
+            <img src="yntkts2.jpeg" alt="Gallery Jellopiaa" class="gallery-img">
+          </div>
+        <div class="gallery-slide-overlay"><span>🔍</span></div>
+        </div>
+        
+        <div class="gallery-slide" data-emoji="party">
+          <div class="gallery-slide-inner">
+            <img src="hehe.jpeg" alt="Gallery Jellopiaa" class="gallery-img">
+          </div>
+        <div class="gallery-slide-overlay"><span>🔍</span></div>
+        </div>
+
+    </div><!-- end gallery-slider-clip -->
+
       <div class="gallery-dots" id="galleryDots"></div>
     </div>
   </section>
@@ -165,17 +187,18 @@
     <div class="container">
       <div class="contact-inner">
         <div class="contact-phone-mockup">
-          <div class="contact-phone-screen">📸</div>
+          <div class="contact-phone-screen wa-screen">
+            <img src="wssp.logo.png" alt="WhatsApp Icon" class="wa-icon">
+          </div>
         </div>
         <div class="contact-text">
-          <h2 class="spray-heading">FOR ORDERS, INQUIRIES & SWEET UPDATES, CONNECT WITH US ON INSTAGRAM</h2>
-          <div class="contact-handle">@Jellopiaaaa_sweet</div>
+          <h2 class="spray-heading">FOR ORDERS, INQUIRIES & SWEET UPDATES, CONNECT WITH US ON WHATSAPP</h2>
+          <div class="contact-handle">+62 81215938500</div>
           <p class="contact-desc">
-            Direct message (DM) untuk pemesanan langsung, info menu terbaru, dan update promo menarik.
+            Chat WA untuk pemesanan langsung, info menu terbaru, dan update promo menarik.
           </p>
           <div class="contact-btn-wrap">
-            <a href="https://instagram.com/jellopiaaaa_sweet" target="_blank" class="btn btn-yellow">📱 DM di Instagram</a>
-            <a href="#home" class="btn btn-outline" style="color:white;border-color:rgba(255,255,255,0.4)">Pesan Sekarang</a>
+            <a href="https://wa.me/6281215938500?text=Halo+Jellopiaa!+Saya+mau+pesan+jelly+salad+nih+😊" target="_blank" class="btn btn-yellow">📱 Chat di WhatsApp</a>
           </div>
         </div>
       </div>
@@ -187,11 +210,12 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="footer-brand-name">jellopiara</div>
+          <div class="footer-brand-name">
+            <img src="Logo.png" alt="Logo jellopiaa">
+          </div>
           <p class="footer-brand-desc">
-            Nikmati kesegaran buah melon hijau kualitas terbaik yang dipadukan dengan kelembutan jelly. Di Jellopiara, kami hanya menggunakan melon segar alami yang menjamin rasa manis alami yang memanjakan lidah Anda.
+            Nikmati kesegaran buah melon hijau kualitas terbaik yang dipadukan dengan kelembutan jelly. Di Jellopiaa, kami hanya menggunakan melon segar alami yang menjamin rasa manis alami yang memanjakan lidah Anda.
           </p>
-          <div class="footer-instagram">@Jellopiaaaa_sweet</div>
         </div>
         <div class="footer-col">
           <div class="footer-col-title">QUICK LINKS</div>
@@ -203,16 +227,15 @@
         </div>
         <div class="footer-col">
           <div class="footer-col-title">CUSTOMER CARE</div>
-          <p>Ikuti media sosial kami untuk update menu terbaru dan promo menarik lainnya.</p>
-          <a href="https://instagram.com/jellopiaaaa_sweet" target="_blank">@Jellopiaaaa_sweet</a>
+          <p>Chat kami untuk update menu terbaru dan promo menarik lainnya.</p>
+          <a href="https://wa.me/6281215938500?text=Halo+Jellopiaa!+Saya+mau+pesan+jelly+salad+nih+😊" target="_blank" class="footer-wa-link">
+            <i class="fa-brands fa-whatsapp fa-lg"></i>
+          <span>Chat-me</span>
+        </a>
         </div>
       </div>
       <div class="footer-bottom">
-        <div>
-          <span class="footer-bottom-brand">jellopiara</span>
-          <span> &nbsp;·&nbsp; @Jellopiaaaa_sweet</span>
-        </div>
-        <div>© 2025 Jellopiara. All rights reserved.</div>
+        <div>Copyright © 2025 Jellopiaa. All rights reserved.</div>
       </div>
     </div>
   </footer>

@@ -148,13 +148,16 @@
       });
 
       // ---- Lightbox on click (distinguish from drag) ----
-      slides.forEach(slide => {
-        slide.addEventListener('click', (e) => {
-          if (Math.abs(dragDelta) > 8) return; // was a drag, not a click
-          lightboxEmoji.textContent = slide.dataset.emoji;
-          lightbox.classList.add('open');
-        });
-      });
+slides.forEach(slide => {
+  slide.addEventListener('click', (e) => {
+    if (Math.abs(dragDelta) > 8) return; 
+    
+    const imgSrc = slide.querySelector('img').src;
+    
+    lightboxEmoji.innerHTML = `<img src="${imgSrc}" style="max-width:100%; border-radius:15px;">`;
+    lightbox.classList.add('open');
+  });
+});
 
       // ---- Keyboard ----
       document.addEventListener('keydown', (e) => {
